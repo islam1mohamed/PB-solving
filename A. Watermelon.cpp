@@ -5,7 +5,7 @@ int main()
 {
     int w ;
     cin >> w;
-    if (w%2 && w>2) cout <<"YES";
+    if (w%2==0 && w>2) cout <<"YES";
     else cout << "NO";
     /* code */
     return 0;
