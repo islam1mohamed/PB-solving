@@ -1,9 +1,6 @@
 #include<iostream>
 using namespace std;
-
-
-string op(string word[],int length);
-
+void op (string word[],int length);
 int main()
 {
     int number;
@@ -13,20 +10,19 @@ for (int i=0; i<number; i++){
     string x;
     cin >>word[i]; 
 }
-
-
+op(word,number);
+return 0;
 }
-
-string op(string word[],int length){
+void op(string word[],int length){
  for (int i=0; i<length; i++){
  int holder = word[i].length();
 if (holder<length+1) cout<< word[i];
 else {
-    string hold_word= "islam";//word[i];
+    string hold_word= word[i];
     string x= to_string(holder);
-
-    string printed= hold_word [0]+ x + hold_word[i-1];
-
+    string printed= hold_word.at(0)+ x + hold_word.at(holder-1);
+cout << printed;
     
 }
-
+}
+}
