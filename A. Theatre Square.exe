@@ -26553,24 +26553,24 @@ namespace std
 # 2 "C:\\Users\\islam\\code force problems\\A. Theatre Square.cpp" 2
 
 
-# 3 "C:\\Users\\islam\\code force problems\\A. Theatre Square.cpp"
+
+# 4 "C:\\Users\\islam\\code force problems\\A. Theatre Square.cpp"
 using namespace std;
 
 int main (){
 
-int n , m ,a ;
+long long n , m ,a ;
 cin >> n >> m >> a;
 
-int area_theater= n * m;
-int area_stone = a * a;
-int s_number= area_theater / area_stone;
 
+double nlength = n/a;
+double nwidth = m/a;
+if (nwidth < m*1.0/a) nwidth = nwidth+1;
 
+if (nlength < n*1.0/a) nlength = nlength+1;
+
+long long s_number= nwidth *nlength ;
 cout << s_number;
-
-
-
-
 
 
 }
