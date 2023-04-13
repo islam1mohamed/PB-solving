@@ -16,12 +16,12 @@ return 0;
 void op(string word[],int length){
  for (int i=0; i<length; i++){
  int holder = word[i].length();
-if (holder<length+1) cout<< word[i];
+if (holder<=10) cout<< word[i]<<"\n";
 else {
     string hold_word= word[i];
-    string x= to_string(holder);
+    string x= to_string(holder-2);
     string printed= hold_word.at(0)+ x + hold_word.at(holder-1);
-cout << printed;
+cout << printed<<"\n";
     
 }
 }
