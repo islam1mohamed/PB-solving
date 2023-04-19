@@ -1,29 +1,20 @@
 #include <iostream>
 #include <string>
+#include <vector>
+#include <algorithm>
 
 using namespace std;
 
+void rearrange (string num[],int recorded ){
+vector<int> inum;
+for (int i=0; i< recorded;i++ )
+inum.push_back(stoi(num[i]));
 
-void rearrange (string num[],int recorded ,string fun2){
-int inum [recorded] ;
-inum [0]= stoi(num[0]);
-int i=0;
+sort(inum.begin(),inum.end());
+
 int holder;
-while ( i<recorded){
-    i++;
-      
-    for (int j =0;j<recorded; j++ ){
-    if ( stoi(num[j])< inum[i])
-    {holder = inum[i];
-        inum[i] = stoi(num[j]);
-        break;
-    }
-    }
-
-}
-for (int i=0; i< recorded;i++ )cout << inum[i] << "\n";
-
-
+for (int i=0; i< recorded-1;i++ )cout << inum[i] << "+";
+cout << inum[recorded-1];
 }
 
 int main(){
@@ -31,7 +22,6 @@ int main(){
     // reorder
     string num [100];
     string fun ;
-    string fun2;
     cin>> fun ;
     fun+='+';
     int start = 0;
@@ -49,10 +39,7 @@ int main(){
       
     }
     }
-   // cout << fun2;
-   //cout << recorded;
 
-  // for (int i=0; i< recorded;i++ )cout << num[i];
-   rearrange (num ,recorded , fun2);
+   rearrange (num ,recorded );
    
 }
