@@ -1,11 +1,10 @@
 x=input()
 i=0
-while x != 0:
-     if x == "":
-       break
-      
+while x != "":
      i+=1
 
      x=x.replace(x[0],"")
 
-print(i)
+if i%2 ==1 :
+        print ("IGNORE HIM!")
+else : print ("CHAT WITH HER!")
