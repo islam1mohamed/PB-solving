@@ -14,5 +14,4 @@ int main(){
         holder = rockColors;
     }
  cout << rockRemoved;
-
 }
