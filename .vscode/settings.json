@@ -5,6 +5,7 @@
         "algorithm": "cpp",
         "set": "cpp",
         "string": "cpp",
-        "cstring": "cpp"
+        "cstring": "cpp",
+        "*.tcc": "cpp"
     }
 }
