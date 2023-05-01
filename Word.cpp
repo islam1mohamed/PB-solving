@@ -13,11 +13,13 @@ int main(){
     cin>> inp ;
     for (int i=0; i<inp.size(); i++){
     if (inp[i]<'a')      up ++;
-
-    else low--;
+    else low++;
     }
+    // cout << low<< "\n";
+    // cout << up << "\n";
     
-    if (low>=up){
+
+    if (up>low){
         for (int i=0; i<inp.size(); i++){
             if (inp[i]>96){
                 inp[i]=inp[i]+'A'-'a';
@@ -30,7 +32,6 @@ int main(){
                 inp[i]=inp[i]+'a'-'A';
             }
         }
-
     }
     cout<< inp;
 
