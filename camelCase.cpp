@@ -5,7 +5,8 @@
 #include<string>
 
 using namespace std;
-string to_camel_case (string &in ){
+string to_camel_case (const string& inp ){
+string in = inp;
 int tot = in.length();
     for (int i = 0 ; i< tot; i++){
         if (in[i]== '-' ||in[i]== '_' ){
