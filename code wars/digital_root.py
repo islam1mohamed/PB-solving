@@ -14,7 +14,9 @@ def digital_root(n):
         
     return sum
 
-print(digital_root(5)) #16 ->7
+def digital_root2(n):
+	return n%9 or n and 9 
+print( 16%9 or 16) #16 ->7
 
 n=106
 y=map(int,str(n))
