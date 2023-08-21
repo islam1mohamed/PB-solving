@@ -16,6 +16,6 @@ with open(r"D:\Data_sets\Excercise\poem.txt",'r') as f:
 
 
     
-sort_dic= sorted(dic.items(),key= lambda x:x[1],reverse=True )
+sort_dic= sorted(dic.items(),key= lambda x:x[1],reverse=True );
 print(sort_dic)
 
